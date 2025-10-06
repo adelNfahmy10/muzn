@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@font-face {
+  font-family: 'ExpoArabic';
+  src: url('../public/assets/fonts/Expo_Arabic_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExpoArabic';
+  src: url('../public/assets/fonts/Expo_Arabic_Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ExpoArabic', sans-serif;
+  font-weight: 500; /* Medium by default */
+  color: #222;
+  background-color: #fff;
+}
+
+/* Headings use the Bold version */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'ExpoArabic', sans-serif;
+}
+h1, h2{
+  color: #46AEDD !important;
+}
+html, body {
+  scroll-behavior: smooth;
+}
+.main-color{
+  color: #46AEDD;
+}
+.main-bg{
+  background-color: #46AEDD;
+}
