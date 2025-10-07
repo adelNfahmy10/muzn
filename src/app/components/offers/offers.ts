@@ -1,4 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-offers',
@@ -67,4 +68,15 @@ export class Offers {
   decrease(product: any) {
     if (product.qty > 1) product.qty--;
   }
+  swiperConfig: SwiperOptions = {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    loop:true,
+    breakpoints: {
+      350: { slidesPerView: 2, spaceBetween: 10 },
+      576: { slidesPerView: 2, spaceBetween: 10 },
+      768: { slidesPerView: 3, spaceBetween: 10 },
+      1024: { slidesPerView: 4, spaceBetween: 20 }
+    }
+  };
 }
